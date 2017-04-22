@@ -45,7 +45,7 @@ class App extends Component {
       );
     });
     return(
-      <div className="card fixtures-box">
+      <div className="fixtures-box">
         {match_fixtures}
       </div>
     );

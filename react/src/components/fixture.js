@@ -9,7 +9,7 @@ const Fixture = props => {
   time.join();
   if (props.home_score == null) {
     return (
-      <div>
+      <div className="game-box">
         <h3>{props.home_team} at {props.away_team}</h3>
         <h4>{time}</h4>
         <h5>{date}</h5>
@@ -17,7 +17,7 @@ const Fixture = props => {
   );}
   else {
     return (
-      <div>
+      <div className="game-box">
         <h3>{props.home_team} {props.home_score}-{props.away_score} {props.away_team}</h3>
         <h4>{time}</h4>
         <h5>{date}</h5>
