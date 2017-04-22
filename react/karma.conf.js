@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 var path = require('path');
 
 module.exports = function(config) {

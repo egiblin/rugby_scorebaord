@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 import React, { Component } from 'react';
 import Fixture from './fixture';
 
@@ -105,7 +106,7 @@ class App extends Component {
       }
     });
     return(
-      <div>
+      <div className="fixtures-box">
         <h1>Future Fixtures</h1>
           <h2>Aviva</h2>
           {aviva_future_fixtures}

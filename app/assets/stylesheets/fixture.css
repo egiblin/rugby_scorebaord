@@ -1,0 +1,9 @@
+.game-box {
+  margin: 1rem;
+  border-radius: 10px;
+  border-style: double;
+  border-width: medium;
+  opacity: 0.8;
+  background-color: white;
+  padding: 1rem;
+}

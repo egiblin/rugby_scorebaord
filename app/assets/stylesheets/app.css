@@ -1,0 +1,25 @@
+.main {
+  background-image: url("http://bsnscb.com/data/out/166/39029356-rugby-wallpapers.jpeg");
+}
+
+.app {
+  padding: 1rem;
+}
+
+.top-bar {
+  text-align: center;
+}
+
+.top-bar-center {
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.fixtures-box {
+  background-image: url("http://bsnscb.com/data/out/166/39029356-rugby-wallpapers.jpeg");
+  background-size: auto;
+  padding: 1rem;
+}
