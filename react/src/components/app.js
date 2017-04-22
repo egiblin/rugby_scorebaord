@@ -25,6 +25,7 @@ class App extends Component {
         game.key = count;
         count ++;
       });
+      games.reverse();
       this.setState({ fixtures: games});
     });
   }
