@@ -30,22 +30,42 @@ class App extends Component {
   }
 
   render() {
-    let match_fixtures = this.state.fixtures.map(fixture => {
-      return(
-        <Fixture
-        key={fixture.id}
-        id={fixture.id}
-        home_team={fixture.home_team.name}
-        away_team={fixture.away_team.name}
-        home_score={fixture.home_score}
-        away_score={fixture.away_score}
-        kickoff={fixture.kickoff}
-        />
-      );
+    let past_fixtures = this.state.fixtures.map(fixture => {
+      if (fixture.home_score != null) {
+        return(
+          <Fixture
+          key={fixture.id}
+          id={fixture.id}
+          home_team={fixture.home_team.name}
+          away_team={fixture.away_team.name}
+          home_score={fixture.home_score}
+          away_score={fixture.away_score}
+          kickoff={fixture.kickoff}
+          />
+        );
+      }
+    });
+    let future_fixtures = this.state.fixtures.map(fixture => {
+      if (fixture.home_score == null) {
+        return(
+          <Fixture
+          key={fixture.id}
+          id={fixture.id}
+          home_team={fixture.home_team.name}
+          away_team={fixture.away_team.name}
+          home_score={fixture.home_score}
+          away_score={fixture.away_score}
+          kickoff={fixture.kickoff}
+          />
+        );
+      }
     });
     return(
       <div>
-      {match_fixtures}
+      <h1>Future Fixtures</h1>
+      {future_fixtures}
+      <h1>Past Fixtures</h1>
+      {past_fixtures}
       </div>
     );
   }
