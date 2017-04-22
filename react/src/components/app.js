@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 import React, { Component } from 'react';
 import Fixture from './fixture';
 
@@ -43,8 +44,8 @@ class App extends Component {
       );
     });
     return(
-      <div>
-      {match_fixtures}
+      <div className="card fixtures-box">
+        {match_fixtures}
       </div>
     );
   }
