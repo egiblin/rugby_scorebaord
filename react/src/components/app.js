@@ -107,15 +107,15 @@ class App extends Component {
     });
     return(
       <div className="fixtures-box">
-        <h1>Future Fixtures</h1>
-          <h2>Aviva</h2>
+        <h1 className="future">Future Fixtures</h1>
+          <h2 className="league">League: Aviva</h2>
           {aviva_future_fixtures}
-          <h2>Pro 12</h2>
+          <h2 className="league">League: Pro 12</h2>
           {pro12_future_fixtures}
-        <h1>Past Fixtures</h1>
-          <h2>Aviva</h2>
+        <h1 className="past">Past Fixtures</h1>
+          <h2 className="league">League: Aviva</h2>
           {aviva_past_fixtures}
-          <h2>Pro 12</h2>
+          <h2 className="league">League: Pro 12</h2>
           {pro12_past_fixtures}
       </div>
     );
