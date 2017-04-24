@@ -16,7 +16,7 @@
 
 .fixtures-box {
   background-image: url("http://bsnscb.com/data/out/166/39029356-rugby-wallpapers.jpeg");
-  background-size: auto;
+  background-size: stretch;
   padding: 1rem;
 }
 
